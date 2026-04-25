@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ccvkxdq7tvfrg"]
+
+[ext_resource type="Script" uid="uid://ccpkqu2qdl2xm" path="res://scenes/player/score.gd" id="1_s7pqq"]
+
+[node name="score" type="Label" unique_id=798050308]
+offset_left = 39.0
+offset_right = 79.0
+offset_bottom = 23.0
+script = ExtResource("1_s7pqq")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=400329065]
+layout_mode = 0
+offset_left = -38.0
+offset_top = 8.0
+offset_right = 0.40000534
+offset_bottom = 16.0
+expand_mode = 1
