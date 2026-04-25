@@ -30,4 +30,4 @@ func _connect_signals():
 		coin.collected.connect(_coin_collected)
 		
 func _coin_collected():
-	$Player.increase_score()
+	$Player.increase_score("coinssa")

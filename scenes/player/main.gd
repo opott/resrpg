@@ -35,4 +35,3 @@ func increase_score(label_counting):
 		if label.whatitscounting == label_counting:
 			label.val += 1
 			label.text = str(label.val)
-			

@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://d2l8psj07iem4" path="res://scenes/player/main.gd" id="1_uqj2r"]
 [ext_resource type="Texture2D" uid="uid://bpavr62u36w5j" path="res://character1.png" id="2_s4h7g"]
-[ext_resource type="PackedScene" uid="uid://ccvkxdq7tvfrg" path="res://scenes/player/score.tscn" id="3_5l0vc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5l0vc"]
 size = Vector2(10, 8)
@@ -24,5 +23,3 @@ shape = SubResource("RectangleShape2D_5l0vc")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1229002404]
 position_smoothing_speed = 6.0
-
-[node name="score" parent="." unique_id=798050308 instance=ExtResource("3_5l0vc")]
