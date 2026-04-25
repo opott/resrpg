@@ -3,15 +3,21 @@ extends Node
 const coin_node = preload("res://scenes/coin.tscn")
 
 const coins_to_create = [
-		Vector2(0, 0),
+		Vector2(0, 1),
 		Vector2(100, 200),
-		Vector2(400, 300),
-		Vector2(123, 456),
-		Vector2(456, 789),
-		Vector2(-100, -200),
-		Vector2(350, 800),
+		Vector2(88, 231),
+		Vector2(123, 234),
+		Vector2(253, 53),
+		Vector2(-88, 231),
+		Vector2(123, -234),
+		Vector2(-253, -53),
+		Vector2(-100, 145),
+		Vector2(97, 34),
 		Vector2(30, 800),
-		Vector2(-25, 700),
+		Vector2(-25, 213),
+		Vector2(-97, -34),
+		Vector2(30, -800),
+		Vector2(-25, 213),
 	]
 
 var coin_nodes = []
@@ -30,4 +36,4 @@ func _connect_signals():
 		coin.collected.connect(_coin_collected)
 		
 func _coin_collected():
-	$Player.increase_score("coinssa")
+	$Player.increase_score("coins")

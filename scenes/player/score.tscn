@@ -1,20 +1,19 @@
 [gd_scene format=3 uid="uid://ccvkxdq7tvfrg"]
 
-[ext_resource type="Texture2D" uid="uid://b2ih74e1kr4wx" path="res://Coin.png" id="1_hfipn"]
 [ext_resource type="Script" uid="uid://ccpkqu2qdl2xm" path="res://scenes/player/score.gd" id="1_s7pqq"]
+[ext_resource type="Texture2D" uid="uid://dg2mf6l02hrlt" path="res://CropCoin.png" id="2_s7pqq"]
 
-[node name="score" type="Label" unique_id=798050308]
-offset_left = 39.0
-offset_right = 79.0
-offset_bottom = 23.0
-text = "0"
+[node name="score" type="Node2D" unique_id=2132738338]
 script = ExtResource("1_s7pqq")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=400329065]
-layout_mode = 0
-offset_left = -38.0
-offset_top = 8.0
-offset_right = 0.40000534
+offset_left = -8.0
+offset_top = 9.0
 offset_bottom = 16.0
-texture = ExtResource("1_hfipn")
+texture = ExtResource("2_s7pqq")
 expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=2110136020]
+offset_right = 45.0
+offset_bottom = 23.0
+text = "1"

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cbcuatd36661d"]
+
+[ext_resource type="Script" uid="uid://bb3kr0jfxcun" path="res://scenes/house.gd" id="1_qtlar"]
+[ext_resource type="Texture2D" uid="uid://clw4po6tn5q04" path="res://Houses.png" id="2_qtlar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7po0"]
+size = Vector2(43, 11.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qtlar"]
+size = Vector2(43, 46)
+
+[node name="house" type="StaticBody2D" unique_id=1241797963]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_qtlar")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=173817721]
+position = Vector2(-1.9073486e-06, -0.8333345)
+scale = Vector2(0.6999999, 0.6999999)
+texture = ExtResource("2_qtlar")
+region_enabled = true
+region_rect = Rect2(90, 14, 60, 70)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1073207002]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1300723443]
+position = Vector2(-0.5, 25.75)
+shape = SubResource("RectangleShape2D_d7po0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=995119199]
+position = Vector2(-0.5, -3)
+shape = SubResource("RectangleShape2D_qtlar")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
